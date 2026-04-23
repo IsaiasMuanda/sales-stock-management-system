@@ -14,8 +14,27 @@ Este sistema foi desenvolvido com foco em aplicações reais de mercado, podendo
 - Registro de vendas  
 - Organização de produtos  
 - Gestão de operações comerciais  
+- Controle de utilizadores com permissões  
 
 A aplicação oferece uma interface simples, funcional e adaptada a ambientes empresariais que utilizam soluções desktop.
+
+---
+
+## 👥 Sistema de Acesso (Roles)
+
+O sistema possui controlo de acesso baseado em perfis de utilizador:
+
+### 🔐 Admin
+- Acesso total ao sistema  
+- Gestão de produtos, vendas, stock e utilizadores  
+- Gestão de funcionários e fornecedores  
+- Acesso ao dashboard e relatórios  
+
+### 👤 User (Utilizador normal)
+- Acesso limitado às funcionalidades operacionais  
+- Registo de vendas  
+- Consulta de produtos e stock  
+- Sem permissões de gestão de sistema  
 
 ---
 
@@ -48,6 +67,9 @@ Essa abordagem permite um código mais limpo, reutilizável e de fácil manuten�
 - 🧾 Registro de vendas  
 - 💰 Cálculo automático de valores  
 - 📊 Controle de stock  
+- 👥 Sistema de login com roles (Admin / User)  
+- 👔 Gestão de funcionários (Admin)  
+- 🚚 Gestão de fornecedores (Admin)  
 - 📋 Listagem e consulta de dados  
 - 💾 Persistência de dados em banco MySQL  
 
@@ -67,21 +89,21 @@ Este sistema pode ser utilizado em:
 ## 📷 Interface do Sistema
 
 ### 🔐 Tela de Login
-![Login](screenshots/login.png) 
+![Login](screenshots/login.png)
 
-### 🔐 Tela Principal
+### 🏠 Tela Principal
 ![Principal](screenshots/principal.png)
 
 ### 📦 Gestão de Produtos
-![Productos](screenshots/productos.png)
+![Produtos](screenshots/produtos.png)
 
 ### 🧾 Vendas
 ![Vendas](screenshots/vendas.png)
 
-### 🔐 Gestão de funcionários
-![Funcionários](screenshots/funcionaários.png)
+### 👔 Gestão de Funcionários (Admin)
+![Funcionários](screenshots/funcionarios.png)
 
-### 🔐 Gestão de Fornecedores
+### 🚚 Gestão de Fornecedores (Admin)
 ![Fornecedores](screenshots/fornecedores.png)
 
 ### 📊 Dashboard
@@ -101,5 +123,7 @@ Este sistema pode ser utilizado em:
 
 ### Instalação
 
+```bash
+git clone https://github.com/IsaiasMuanda/sales-stock-management-system.git
 ```bash
 git clone https://github.com/IsaiasMuanda/sales-stock-management-system.git

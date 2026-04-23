@@ -30,8 +30,11 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormSistema));
             panel1 = new Panel();
+            panel4 = new Panel();
+            label3 = new Label();
             panel2 = new Panel();
             label2 = new Label();
+            buttonContas = new Button();
             buttonRelatorios = new Button();
             panel3 = new Panel();
             label1 = new Label();
@@ -40,14 +43,11 @@
             label6 = new Label();
             buttonCategoria = new Button();
             panelConteudoSistema = new Panel();
-            panel4 = new Panel();
-            label3 = new Label();
-            buttonContas = new Button();
             panel1.SuspendLayout();
+            panel4.SuspendLayout();
             panel2.SuspendLayout();
             panel3.SuspendLayout();
             panel5.SuspendLayout();
-            panel4.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
@@ -65,6 +65,26 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(1342, 197);
             panel1.TabIndex = 0;
+            // 
+            // panel4
+            // 
+            panel4.BackColor = Color.FromArgb(45, 45, 48);
+            panel4.Controls.Add(label3);
+            panel4.Location = new Point(608, 13);
+            panel4.Name = "panel4";
+            panel4.Size = new Size(280, 31);
+            panel4.TabIndex = 67;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Century Gothic", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            label3.ForeColor = Color.White;
+            label3.Location = new Point(100, 0);
+            label3.Name = "label3";
+            label3.Size = new Size(71, 21);
+            label3.TabIndex = 0;
+            label3.Text = "Contas";
             // 
             // panel2
             // 
@@ -85,6 +105,25 @@
             label2.Size = new Size(182, 21);
             label2.TabIndex = 0;
             label2.Text = "Relatório De Vendas";
+            // 
+            // buttonContas
+            // 
+            buttonContas.BackColor = Color.White;
+            buttonContas.BackgroundImageLayout = ImageLayout.None;
+            buttonContas.FlatAppearance.BorderColor = Color.Gray;
+            buttonContas.FlatAppearance.MouseDownBackColor = Color.White;
+            buttonContas.FlatAppearance.MouseOverBackColor = Color.FromArgb(0, 156, 222);
+            buttonContas.FlatStyle = FlatStyle.Flat;
+            buttonContas.Font = new Font("Century Gothic", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonContas.ForeColor = Color.FromArgb(225, 48, 108);
+            buttonContas.Image = (Image)resources.GetObject("buttonContas.Image");
+            buttonContas.Location = new Point(608, 34);
+            buttonContas.Name = "buttonContas";
+            buttonContas.Size = new Size(280, 130);
+            buttonContas.TabIndex = 68;
+            buttonContas.TextAlign = ContentAlignment.BottomCenter;
+            buttonContas.UseVisualStyleBackColor = false;
+            buttonContas.Click += buttonContas_Click;
             // 
             // buttonRelatorios
             // 
@@ -190,45 +229,6 @@
             panelConteudoSistema.Size = new Size(1342, 577);
             panelConteudoSistema.TabIndex = 1;
             // 
-            // panel4
-            // 
-            panel4.BackColor = Color.FromArgb(45, 45, 48);
-            panel4.Controls.Add(label3);
-            panel4.Location = new Point(608, 13);
-            panel4.Name = "panel4";
-            panel4.Size = new Size(280, 31);
-            panel4.TabIndex = 67;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Century Gothic", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.ForeColor = Color.White;
-            label3.Location = new Point(100, 0);
-            label3.Name = "label3";
-            label3.Size = new Size(71, 21);
-            label3.TabIndex = 0;
-            label3.Text = "Contas";
-            // 
-            // buttonContas
-            // 
-            buttonContas.BackColor = Color.White;
-            buttonContas.BackgroundImageLayout = ImageLayout.None;
-            buttonContas.FlatAppearance.BorderColor = Color.Gray;
-            buttonContas.FlatAppearance.MouseDownBackColor = Color.White;
-            buttonContas.FlatAppearance.MouseOverBackColor = Color.FromArgb(0, 156, 222);
-            buttonContas.FlatStyle = FlatStyle.Flat;
-            buttonContas.Font = new Font("Century Gothic", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            buttonContas.ForeColor = Color.FromArgb(225, 48, 108);
-            buttonContas.Image = (Image)resources.GetObject("buttonContas.Image");
-            buttonContas.Location = new Point(608, 34);
-            buttonContas.Name = "buttonContas";
-            buttonContas.Size = new Size(280, 130);
-            buttonContas.TabIndex = 68;
-            buttonContas.TextAlign = ContentAlignment.BottomCenter;
-            buttonContas.UseVisualStyleBackColor = false;
-            buttonContas.Click += buttonContas_Click;
-            // 
             // FormSistema
             // 
             AutoScaleDimensions = new SizeF(9F, 20F);
@@ -242,14 +242,14 @@
             Name = "FormSistema";
             Text = "FormSistema";
             panel1.ResumeLayout(false);
+            panel4.ResumeLayout(false);
+            panel4.PerformLayout();
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
             panel5.ResumeLayout(false);
             panel5.PerformLayout();
-            panel4.ResumeLayout(false);
-            panel4.PerformLayout();
             ResumeLayout(false);
         }
 

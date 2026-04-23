@@ -151,7 +151,7 @@ namespace Projecto_YII.Projecto.YII.DAO
             {
                 string acesso = dataReader_.GetString("acesso");
                 FormTelaInicial formTelaInicial_ = new FormTelaInicial();
-                formTelaInicial_.labelLateralUser.Text = username;
+                formTelaInicial_.labelLateralUser.Text = nome_usuario;
                 formTelaInicial_.labelLateralAcesso.Text = acesso;
                 if ( acesso.Equals("Administrador") )
                 {

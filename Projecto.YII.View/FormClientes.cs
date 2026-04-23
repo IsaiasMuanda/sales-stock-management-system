@@ -136,5 +136,10 @@ namespace Projecto_YII.Projecto.YII.View
             maskedTextBoxTelefoneCliente.Text = string.Empty;
         }
         #endregion
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

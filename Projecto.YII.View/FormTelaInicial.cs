@@ -37,6 +37,41 @@ namespace Projecto_YII.Projecto.YII.View
         }
         #region Métodos Gerais
         //Método para abrir/carregar formulários no PanelConteudo
+        /*
+            1. Verificação do Controle Existente:
+               - Primeiro, o método verifica se o `panelPrincipal` (provavelmente um painel em seu formulário) já contém algum controle.
+                Isso é feito com a condição `if (this.panelPrincipal.Controls.Count > 0).
+
+            2. Remoção do Controle Existente (se houver):
+               - Se o `panelPrincipal` já contiver algum controle, ele é removido. Isso é feito com a linha
+                `this.panelPrincipal.Controls.RemoveAt(0);`.
+               - Essa linha de código garante que apenas um controle (geralmente um formulário) seja exibido por vez no `panelPrincipal`. 
+                Se já houver um controle exibido, ele é removido para dar lugar ao novo.
+
+            3. Conversão para Formulário:
+               - O parâmetro `formularios_obj` é convertido em um objeto do tipo `Form` usando a instrução `Form form1 = formularios_obj as Form;
+
+            4. Configuração do Formulário:
+               - O formulário (`form1`) é configurado para não ser exibido como um formulário de nível superior (`form1.TopLevel = false;`).
+                Isso significa que ele será incorporado dentro do `panelPrincipal` e não aparecerá como uma janela separada.
+
+               - O formulário é configurado para preencher todo o espaço disponível no `panelPrincipal` (`form1.Dock = DockStyle.Fill;`).
+                Isso faz com que o formulário se ajuste ao tamanho do `panelPrincipal`.
+
+            5. Adição do Formulário ao Painel:
+               - O formulário é adicionado como um controle ao `panelPrincipal` usando a linha `this.panelPrincipal.Controls.Add(form1);`.
+
+            6. Configuração do Tag do Painel:
+               - O `panelPrincipal` também recebe uma tag que aponta para o formulário atual. Isso pode ser útil para acessar o formulário
+                posteriormente.
+
+            7. Exibição do Formulário:
+               - Por fim, o formulário é exibido usando `form1.Show();`.
+
+            Em resumo, esse método permite que você abra formulários dentro de um painel (`panelPrincipal`) em seu formulário principal.
+            Ele garante que apenas um formulário seja exibido por vez no painel e configura o formulário para ocupar todo o espaço disponível.
+            Isso é útil para criar uma interface de várias páginas em um único formulário.
+         */
         public void AbrirForms(object formularios_obj)
         {
             if (this.panelPrincipal.Controls.Count > 0)

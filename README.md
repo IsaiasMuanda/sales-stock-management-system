@@ -67,10 +67,10 @@ Este sistema pode ser utilizado em:
 ## 📷 Interface do Sistema
 
 ### 🔐 Tela de Login
-![Login](screenshots/login.png)
-
-### 🔐 Tela de Login
+![Login](screenshots/login.png) ### 🔐 Tela de Login
 ![Principal](screenshots/principal.png)
+
+
 
 ### 📦 Gestão de Produtos
 ![Productos](screenshots/productos.png)

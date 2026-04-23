@@ -67,21 +67,21 @@ Este sistema pode ser utilizado em:
 ## 📷 Interface do Sistema
 
 ### 🔐 Tela de Login
-![Login](screenshots/login.png) ### 🔐 Tela de Login
+![Login](screenshots/login.png) 
+
+### 🔐 Tela Principal
 ![Principal](screenshots/principal.png)
-
-
 
 ### 📦 Gestão de Produtos
 ![Productos](screenshots/productos.png)
 
 ### 🧾 Vendas
-![Vendas](screenshots/venda.png)
+![Vendas](screenshots/vendas.png)
 
-### 🔐 Tela de Login
-![Funcionários](screenshots/funcionarios.png)
+### 🔐 Gestão de funcionários
+![Funcionários](screenshots/funcionaários.png)
 
-### 🔐 Tela de Login
+### 🔐 Gestão de Fornecedores
 ![Fornecedores](screenshots/fornecedores.png)
 
 ### 📊 Dashboard

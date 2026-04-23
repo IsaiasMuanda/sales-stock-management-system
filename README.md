@@ -66,7 +66,26 @@ Este sistema pode ser utilizado em:
 
 ## 📷 Interface do Sistema
 
-> Adicione aqui screenshots reais do sistema para melhor apresentação do projeto.
+### 🔐 Tela de Login
+![Login](screenshots/login.png)
+
+### 🔐 Tela de Login
+![Principal](screenshots/principal.png)
+
+### 📦 Gestão de Produtos
+![Productos](screenshots/productos.png)
+
+### 🧾 Vendas
+![Vendas](screenshots/venda.png)
+
+### 🔐 Tela de Login
+![Funcionários](screenshots/funcionarios.png)
+
+### 🔐 Tela de Login
+![Fornecedores](screenshots/fornecedores.png)
+
+### 📊 Dashboard
+![Dashboard](screenshots/dashboard.png)
 
 ---
 

@@ -95,16 +95,13 @@ Este sistema pode ser utilizado em:
 ![Principal](screenshots/principal.png)
 
 ### 📦 Gestão de Produtos
-![Produtos](screenshots/produtos.png)
+![Produtos](screenshots/productos.png)
 
 ### 🧾 Vendas
 ![Vendas](screenshots/vendas.png)
 
 ### 👔 Gestão de Funcionários (Admin)
 ![Funcionários](screenshots/funcionarios.png)
-
-### 🚚 Gestão de Fornecedores (Admin)
-![Fornecedores](screenshots/fornecedores.png)
 
 ### 📊 Dashboard
 ![Dashboard](screenshots/dashboard.png)
